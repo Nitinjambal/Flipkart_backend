@@ -17,9 +17,8 @@ config({
 })
 
 app.use(cors({
-    origin:[process.env.FRONTEND_URL],
+    Origin:[process.env.FRONTEND_URL],
     methods:["GET","POST","PATCH","PUT","DELETE"],
-    credentials:true
 }))
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
