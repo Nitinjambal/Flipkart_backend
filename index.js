@@ -17,6 +17,7 @@ config({
 })
 
 app.use(cors({
+    
     Origin:[process.env.FRONTEND_URL],
     methods:["GET","POST","PATCH","PUT","DELETE"],
 }))
@@ -24,7 +25,9 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+
 const PORT = process.env.PORT || 8080
+
 
 //Database
 Connection()
