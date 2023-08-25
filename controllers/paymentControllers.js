@@ -44,9 +44,9 @@ export const paymentVerification=async(req,res)=>{
     });
 
     alert("payment successful")
-    // res.redirect(
-    //   `http://localhost:5173/success`
-    // );
+    res.redirect(
+      `https://stellular-peony-0cc62d.netlify.app/success`
+    );
   } else {
     res.status(400).json({
       success: false,
