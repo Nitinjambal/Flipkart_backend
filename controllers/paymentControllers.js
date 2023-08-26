@@ -45,7 +45,7 @@ export const paymentVerification=async(req,res)=>{
 
     alert("payment successful")
     res.redirect(
-      `https://stellular-peony-0cc62d.netlify.app/success`
+      `https://incredible-basbousa-7d2a10.netlify.app/success`
     );
   } else {
     res.status(400).json({
